@@ -6,14 +6,15 @@ by Kixenon (10th Feb 2026)
 *   **Well-side**: Columns 6–10 (1-indexed).
 *   **Default-LST**: LST without any "double-ups" or "quads".
 
+---
+
+## Default-LST:
+
 Each bag of Default-LST, on average, will have 3 pieces used at the well-side (LJT or SZT shape) and 4 pieces used at the stack-side. *Pre-stacking or alts will reach this average in the limit, and thus can be ignored without affecting the math.*
 
 ![img1](src/img1.png)
 
----
-
-## Default-LST:
-*Ignoring line-clears for the sake of simplicity* (again does not affect the final math), the well-side increases by 5 height every 2 bags (see image, there is one row unclearable without quads), this gives us an average of (2.5 height/bag).
+Every 2 bags, the well-side raises by 5 height. This gives us an average of (2.5 height/bag).
 
 Meanwhile, the stack-side increases by (4 pieces/bag) * (4 minos/piece) = (16 minos/bag). Over 5 columns, this raises the height by (16 minos/bag) / (5 minos/height) = (3.2 height/bag).
 
